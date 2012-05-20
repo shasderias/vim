@@ -24,7 +24,7 @@ colors zenburn
 
 set guifont=Inconsolata
 
-set backupdir=/home/shasderias/.vimtemp/
+set backupdir=./.vimtemp/
 
 set backspace=2
 set softtabstop=2
