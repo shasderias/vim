@@ -2,15 +2,17 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'fatih/vim-go'
 
-Bundle 'Zenburn'
+Plugin 'Zenburn'
 
-Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/ervandew/supertab.git'
+
+call vundle#end()
 
 filetype plugin indent on
 " End Vundle Config
@@ -22,7 +24,7 @@ let g:zenburn_high_Contrast=1
 set background=dark
 colors zenburn
 
-set guifont=Inconsolata
+set guifont=Inconsolata:h11
 
 set backupdir=~/.vimtemp/
 
