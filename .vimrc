@@ -1,21 +1,17 @@
-" Vundle Config
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'fatih/vim-go'
+Plug 'vim-scripts/Zenburn'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/nerdtree'
 
-Plugin 'Zenburn'
+Plug 'fatih/vim-go'
 
-Bundle 'git://github.com/ervandew/supertab.git'
-
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
-" End Vundle Config
 
 syntax on
 
