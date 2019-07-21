@@ -1,23 +1,10 @@
 set nocompatible
 filetype off
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'vim-scripts/Zenburn'
-Plug 'ervandew/supertab'
-Plug 'scrooloose/nerdtree'
-Plug 'fatih/vim-go'
-
-call plug#end()
-
 filetype plugin indent on
 
 syntax on
 
-" look and feel
-let g:zenburn_high_Contrast=1
-set background=dark
-colors zenburn
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
   " render properly when inside 256-color tmux and GNU screen.
