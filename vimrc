@@ -36,19 +36,28 @@ set incsearch
 call plug#begin('~/.vim/plugged')
 Plug 'sainnhe/sonokai'
 
+" cs"' to change "hello" to 'hello'
+" ysiw" to surround word with quotes
 Plug 'tpope/vim-surround'
+
+" <Leader><Leader>w to jump to word
+" <Leader><Leader>f{char} to jump to character
+Plug 'easymotion/vim-easymotion'
 
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/lh-brackets'
 
+" :Files to fuzzy find files
+" :Rg to search in files
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" :GoBuild, :GoTest, :GoRun
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" :NERDTreeToggle to open file tree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
-Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 if (has("termguicolors"))
